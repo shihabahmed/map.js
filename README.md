@@ -1,5 +1,5 @@
 #map.js
-Draw google map easily.
+Draw google map easily. No need to include Google Maps API, it is automatically included by the plugin.
 
 ##Dependency
 1. jQuery 1.4+
