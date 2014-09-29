@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>map.js</title>
+	<style>
+		.clear {
+			clear: both;
+		}
+		.map {
+			width: 450px;
+			height: 300px;
+			margin: 20px;
+			float: left;
+		}
+	</style>
+</head>
+<body>
+	<div class="map map1" data-map="location" data-address="Dhaka, Bangladesh" data-markerContent="Dhaka" data-mapType="roadmap" data-zoom="14" data-streetViewControl="true"></div>
+	<div class="map map2"></div>
+	<div class="clear"></div>
+	<div class="map map3" data-map="pointers" data-markers='[{"lat":"35.4949825","lng":"-116.1445962","title":"Los Angeles","markerContent":"Los Angeles, CA"},{"lat":"25.790534","lng":"-80.206600","title":"Miami","markerContent":"Miami, FL"},{"lat":"40.721724","lng":"-73.997780","title":"NewYork","markerContent":"New York, NY"}]'></div>
+	<div class="map map4"></div>
+	<div class="clear"></div>
+	<div class="map map5" data-map="direction" data-to="15 New Baily Road, Dhaka, Bangladesh" data-from="Matuail, Jatrabari, Dhaka, Bangladesh" data-directionsPane="map_directions"></div>
+	<div class="map map6"></div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="map.js"></script>
+	<script>
+		$(function() {
+			$('.map2').drawMap({
+				address: "California, USA",
+				markerContent: "California",
+				mapType: "roadmap",
+				zoom: 14
+			});
+
+			$('.map4').loadMarkers({
+				markers: [{
+								lat: "35.4949825",
+								lng: "-116.1445962",
+								title: "Los Angeles",
+								markerContent:"Los Angeles, CA"
+							},
+							{
+								lat: "25.790534",
+								lng: "-80.206600",
+								title: "Miami",
+								markerContent:"Miami, FL"
+							}]
+			});
+
+			$('.map6').getDirections({
+				"from": "Sayedabad, Dhaka, Bangladesh",
+				"to": "Kolatoli Rd, Cox's Bazar, Bangladesh",
+				"directionsPane": "map_directions"
+			});
+		});
+	</script>
+</body>
+</html>
