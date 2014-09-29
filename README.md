@@ -21,7 +21,7 @@ Draw google map easily.
 		mapType: "roadmap",
 		zoom: 14
 	});
-
+ 
 	$('.map-container').loadMarkers({
 		markers: [{
 			lat: "35.4949825",
@@ -36,7 +36,7 @@ Draw google map easily.
 			markerContent:"Miami, FL"
 		}]
 	});
-
+ 
 	$('.map-container').getDirections({
 		"from": "Sayedabad, Dhaka, Bangladesh",
 		"to": "Kolatoli Rd, Cox's Bazar, Bangladesh",
