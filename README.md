@@ -15,13 +15,18 @@ Draw google map easily.
 ##Usage
 
 ####Using jQuery
+
+*drawMap*
+
 	$('.map-container').drawMap({
 		address: "California, USA",
 		markerContent: "California",
 		mapType: "roadmap",
 		zoom: 14
 	});
- 
+	
+*loadMarkers*
+
 	$('.map-container').loadMarkers({
 		markers: [{
 			lat: "35.4949825",
@@ -36,7 +41,9 @@ Draw google map easily.
 			markerContent:"Miami, FL"
 		}]
 	});
- 
+
+*getDirections*
+
 	$('.map-container').getDirections({
 		"from": "Sayedabad, Dhaka, Bangladesh",
 		"to": "Kolatoli Rd, Cox's Bazar, Bangladesh",
@@ -44,8 +51,15 @@ Draw google map easily.
 	});
 
 ####Using <code>data-</code> attribute
+
+*drawMap*
+
 	<div class="map-container" data-map="location" data-address="Dhaka, Bangladesh" data-markerContent="Dhaka" data-mapType="roadmap" data-zoom="14" data-streetViewControl="true"></div>
 
+*loadMarkers*
+
 	<div class="map-container" data-map="pointers" data-markers='[{"lat":"35.4949825","lng":"-116.1445962","title":"Los Angeles","markerContent":"Los Angeles, CA"},{"lat":"25.790534","lng":"-80.206600","title":"Miami","markerContent":"Miami, FL"},{"lat":"40.721724","lng":"-73.997780","title":"NewYork","markerContent":"New York, NY"}]'></div>
+
+*getDirections*
 
 	<div class="map-container" data-map="direction" data-to="15 New Baily Road, Dhaka, Bangladesh" data-from="Matuail, Jatrabari, Dhaka, Bangladesh" data-directionsPane="map_directions"></div>
