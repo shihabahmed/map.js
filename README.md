@@ -4,7 +4,7 @@ Draw google map easily. No need to include Google Maps API, it is automatically 
 ##Dependency
 1. jQuery 1.4+
 
-##Methods
+##Functions
 **drawMap**: Show an address at the specified location.
 
 **loadMarkers**: Show a list of markers in the map.
