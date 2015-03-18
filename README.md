@@ -57,10 +57,10 @@ Draw google map easily. No need to include Google Maps API, it is automatically 
 	<div class="map-container"
 		data-map="location"
 		data-address="Dhaka, Bangladesh"
-		data-markerContent="Dhaka"
-		data-mapType="roadmap"
+		data-marker-content="Dhaka"
+		data-map-type="roadmap"
 		data-zoom="14"
-		data-streetViewControl="true">
+		data-street-view-control="true">
 	</div>
 
 *loadMarkers*
@@ -78,5 +78,5 @@ Draw google map easily. No need to include Google Maps API, it is automatically 
 		data-map="direction"
 		data-from="Matuail, Jatrabari, Dhaka, Bangladesh"
 		data-to="15 New Baily Road, Dhaka, Bangladesh"
-		data-directionsPane="map_directions">
+		data-directions-pane="map_directions">
 	</div>
